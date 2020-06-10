@@ -52,7 +52,7 @@ loadingBar  = new ProgressDialog(this);
     String UserPhoneKey = Paper.book().read(Prevalent.UserPhoneKey);
     String UserPasswordKey = Paper.book().read(Prevalent.UserPasswordKey);
 
-    if(UserPhoneKey != null && UserPasswordKey != "")
+    if(UserPhoneKey != null && UserPasswordKey != null)
     {
         if (!TextUtils.isEmpty(UserPhoneKey) && !TextUtils.isEmpty(UserPasswordKey)){
 
@@ -90,11 +90,11 @@ AllowAccess(UserPhoneKey,UserPasswordKey);
                         }
                     }
 
-                } else {
-                    Toast.makeText(MainActivity.this, "login error", Toast.LENGTH_SHORT).show();
+                } /*else {
+                    Toast.makeText(MainActivity.this, "", Toast.LENGTH_SHORT).show();
                     loadingBar.dismiss();
 
-                }
+                }*/
             }
 
             @Override

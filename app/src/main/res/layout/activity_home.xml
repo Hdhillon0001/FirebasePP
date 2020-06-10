@@ -24,20 +24,7 @@
         android:textSize="30sp"
          />
 
-    <FrameLayout
-        android:layout_width="320dp"
-        android:layout_height="91dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="624dp">
-
-    <fragment
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-        />
-</FrameLayout>
+   
     <Button
         android:id="@+id/orderbtn"
         android:layout_width="263dp"

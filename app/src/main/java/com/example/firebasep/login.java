@@ -85,9 +85,6 @@ public class login extends AppCompatActivity {
 
 
         }
-        else{
-
-        }
 
 
         final DatabaseReference RootRef;
