@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".register">
+
+    <TextView
+        android:id="@+id/nameofapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="2dp"
+        android:paddingTop="29dp"
+        android:text="DATUM"
+        android:textSize="63dp"
+        android:textStyle="bold|italic"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/Phonenumberid"
+        android:layout_alignBottom="@id/nameofapp"
+        android:layout_marginLeft="-179dp"
+        android:layout_marginBottom="-186dp"
+        android:text="Enter Username :"
+        android:textSize="22dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/Phonenumberid"
+        android:layout_alignBottom="@id/nameofapp"
+        android:layout_marginLeft="-189dp"
+        android:layout_marginBottom="-268dp"
+        android:text="Enter Phone number:"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/Usernameid"
+        android:layout_width="181dp"
+        android:layout_height="43dp"
+        android:layout_alignBottom="@id/nameofapp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="210dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="-191dp"
+        android:background="#ffffff"
+        android:hint="Full Name"
+        android:inputType="text"
+        android:paddingLeft="11dp"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/Phonenumberid"
+        android:layout_width="181dp"
+        android:layout_height="43dp"
+        android:layout_alignBottom="@id/nameofapp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="215dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="-273dp"
+        android:background="#ffffff"
+        android:hint="Mobile Number"
+        android:inputType="number"
+        android:paddingLeft="11dp"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/Passwordid"
+        android:layout_width="181dp"
+        android:layout_height="43dp"
+        android:layout_alignBottom="@id/nameofapp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="215dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="-352dp"
+        android:background="#ffffff"
+        android:hint="password"
+        android:inputType="numberPassword"
+        android:paddingLeft="11dp"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/Phonenumberid"
+        android:layout_alignBottom="@id/nameofapp"
+        android:layout_marginLeft="-187dp"
+        android:layout_marginBottom="-349dp"
+        android:text="Enter Password"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/Accntcreatbtn"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/nameofapp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="-445dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="  Create    Account   " />
+</RelativeLayout>

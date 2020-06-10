@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/nameofapp"
+        android:paddingLeft="2dp"
+        android:textStyle="bold|italic"
+        android:paddingTop="29dp"
+        android:text="DATUM"
+        android:textSize="63dp"
+
+        />
+
+    <TextView
+        android:id="@+id/quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/nameofapp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="-63dp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="22dp"
+        android:text="faire  un don"
+        android:textSize="33dp"
+
+        android:textStyle="italic" />
+
+    <ImageView
+        android:layout_width="356dp"
+        android:layout_height="65dp"
+        android:layout_alignBottom="@id/nameofapp"
+        android:layout_marginBottom="-189dp"
+
+        android:src="@android:drawable/gallery_thumb" />
+
+    <Button
+        android:id="@+id/Loginbtn1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/nameofapp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="81dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="-532dp"
+        android:background="@color/colorAccent2"
+
+        android:text="  Already  a memeber? Login here  "
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/Joinbtn"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/nameofapp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="89dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="-442dp"
+        android:background="@color/colorAccent2"
+        android:text=" Join  Now "
+        android:textAllCaps="false" />
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".login">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/nameofapp"
+        android:paddingLeft="2dp"
+        android:textStyle="bold|italic"
+        android:paddingTop="29dp"
+        android:text="DATUM"
+        android:textSize="63dp"
+
+        />
+
+    <TextView
+        android:id="@+id/quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/nameofapp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="-63dp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="22dp"
+        android:text="faire  un don"
+        android:textSize="33dp"
+
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/phoneid"
+        android:layout_alignBottom="@id/nameofapp"
+        android:layout_marginLeft="-133dp"
+        android:layout_marginBottom="-187dp"
+        android:text="Phone No :"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/phoneid"
+        android:layout_alignBottom="@id/nameofapp"
+        android:layout_marginLeft="-141dp"
+        android:layout_marginBottom="-265dp"
+        android:text="Password :"
+        android:textSize="25dp" />
+
+
+
+    <EditText
+        android:id="@+id/phoneid"
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@id/nameofapp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="186dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="-188dp"
+        android:background="#ffffff"
+        android:hint="phone no."
+        android:paddingLeft="11dp"
+        android:textSize="22dp" />
+
+    <EditText
+        android:layout_width="172dp"
+        android:id="@+id/passwordid"
+        android:inputType="numberPassword"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@id/phoneid"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="185dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="-83dp"
+        android:background="#ffffff"
+        android:hint="password"
+        android:paddingLeft="11dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/phoneid"
+        android:layout_alignBottom="@id/nameofapp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginBottom="-477dp"
+        android:text="or"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/Registerbtn"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/nameofapp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="-546dp"
+        android:background="@color/colorAccent"
+        android:text="            Register           " />
+
+    <Button
+        android:id="@+id/Loginbtn"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/nameofapp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="-391dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="  Login     " />
+
+    <Button
+        android:id="@+id/Frgtbtn"
+        android:layout_width="162dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@id/nameofapp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="219dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="-430dp"
+        android:text="  Forget Password  "
+
+        />
+<CheckBox
+    style="@style/Material.Drawable.CheckBox"
+    android:id="@+id/remenbermechkbx"
+    android:layout_width="wrap_content"
+    android:layout_height="35dp"
+    android:layout_alignBottom="@id/nameofapp"
+    android:layout_alignParentEnd="true"
+    android:layout_marginEnd="46dp"
+    android:layout_marginBottom="-310dp"
+    android:text="Remember Me"/>
+
+
+
+
+
+</RelativeLayout>
