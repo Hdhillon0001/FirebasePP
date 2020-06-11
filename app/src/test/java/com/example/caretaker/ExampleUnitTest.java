@@ -1,4 +1,4 @@
-package com.example.firebasep;
+package com.example.caretaker;
 
 import org.junit.Test;
 

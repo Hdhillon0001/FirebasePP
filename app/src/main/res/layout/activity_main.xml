@@ -4,76 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+android:backgroundTintMode="multiply"
     android:background="@color/colorPrimary"
     tools:context=".MainActivity">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="63dp"
-        android:layout_marginEnd="50dp"
-        android:gravity="center_horizontal"
-        android:id="@+id/nameofapp"
-        android:paddingLeft="2dp"
-        android:textStyle="bold|italic"
-        android:paddingTop="29dp"
-        android:text="DATUM"
-        android:textSize="63dp"
-
-        />
-
-    <TextView
-        android:id="@+id/quote"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/nameofapp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="110dp"
-        android:layout_marginBottom="-63dp"
-        android:gravity="center_horizontal"
-        android:paddingLeft="22dp"
-        android:text="faire  un don"
-        android:textSize="33dp"
-
-        android:textStyle="italic" />
 
     <ImageView
-        android:layout_width="356dp"
-        android:layout_height="65dp"
-        android:layout_alignBottom="@id/nameofapp"
-        android:layout_marginBottom="-189dp"
+        android:id="@+id/imageId"
+        android:layout_width="297dp"
+        android:layout_height="114dp"
+        android:src="@drawable/common_google_signin_btn_icon_dark"
 
-        android:src="@android:drawable/gallery_thumb" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="61dp" />
+
+    <TextView
+        android:layout_width="234dp"
+        android:layout_height="56dp"
+        android:layout_alignBottom="@id/imageId"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="85dp"
+        android:autoSizeTextType="uniform"
+        android:layout_marginBottom="-89dp"
+        android:text="Care Taker" />
+
 
     <Button
-        android:id="@+id/Loginbtn1"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/nameofapp"
-        android:layout_alignParentStart="true"
+        android:id="@+id/loginbtnn"
+        android:layout_width="285dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@id/imageId"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="81dp"
-        android:layout_marginLeft="14dp"
-        android:layout_marginEnd="79dp"
-        android:layout_marginBottom="-532dp"
-        android:background="@color/colorAccent2"
-
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="-271dp"
+        android:background="@color/colorPrimary1"
         android:text="  Already  a memeber? Login here  "
-        android:textAllCaps="false" />
+
+        android:textColorHighlight="#ffffff" />
+
+    <TextView
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@id/imageId"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="-346dp"
+        android:autoSizeTextType="uniform"
+        android:text="OR"
+        android:textColor="#ffffff" />
 
     <Button
-        android:id="@+id/Joinbtn"
-        android:layout_width="212dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/nameofapp"
-        android:layout_alignParentStart="true"
+        android:id="@+id/joinbtnn"
+        android:layout_width="241dp"
+        android:layout_height="64dp"
+        android:layout_alignBottom="@id/imageId"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="89dp"
-        android:layout_marginLeft="14dp"
-        android:layout_marginEnd="109dp"
-        android:layout_marginBottom="-442dp"
-        android:background="@color/colorAccent2"
-        android:text=" Join  Now "
-        android:textAllCaps="false" />
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="-433dp"
+        android:background="@color/colorPrimary1"
+        android:text=" Join Now   "
+
+        android:textColorHighlight="#ffffff" />
 </RelativeLayout>

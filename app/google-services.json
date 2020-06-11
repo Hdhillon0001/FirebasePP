@@ -1,43 +1,50 @@
 {
   "project_info": {
-    "project_number": "969729383928",
-    "firebase_url": "https://fir-p-e5a61.firebaseio.com",
-    "project_id": "fir-p-e5a61",
-    "storage_bucket": "fir-p-e5a61.appspot.com"
+    "project_number": "1051177427099",
+    "firebase_url": "https://caretaker-a16e4.firebaseio.com",
+    "project_id": "caretaker-a16e4",
+    "storage_bucket": "caretaker-a16e4.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:969729383928:android:964d91027a868810734a0d",
+        "mobilesdk_app_id": "1:1051177427099:android:3442699dccd50512a7663e",
         "android_client_info": {
-          "package_name": "com.example.firebasep"
+          "package_name": "com.example.caretaker"
         }
       },
       "oauth_client": [
         {
-          "client_id": "969729383928-a5rqrlgtl2lkfidkvcbskm3u0ma2bj5u.apps.googleusercontent.com",
+          "client_id": "1051177427099-j685fuao0fvhpfn5mb2op7p3raosv1lj.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.firebasep",
+            "package_name": "com.example.caretaker",
             "certificate_hash": "d3abc93656e2d24b38fc39fc5a2ece9b6e4d9481"
           }
         },
         {
-          "client_id": "969729383928-kos80dcdg37igp76fu6tlgj0jmr424ob.apps.googleusercontent.com",
+          "client_id": "1051177427099-ae346s5gj6d9rd1ft0r744b16pt47dio.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA4HJM_Cz_5oX0HVgDv4kKslOCtWttJKrw"
+          "current_key": "AIzaSyCCw4CzEUe6DfgsoE-VoLAWsxu0---yEzE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "969729383928-kos80dcdg37igp76fu6tlgj0jmr424ob.apps.googleusercontent.com",
+              "client_id": "1051177427099-ae346s5gj6d9rd1ft0r744b16pt47dio.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "1051177427099-l3uep05naohmh2ide4f82r984u1vqb6r.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.caretaker"
+              }
             }
           ]
         }
