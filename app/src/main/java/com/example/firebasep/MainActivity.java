@@ -75,16 +75,19 @@ AllowAccess(UserPhoneKey,UserPasswordKey);
                 if (dataSnapshot.child("Users").child(password).exists()) {
                     Users userData = dataSnapshot.child("Users").child(phone).getValue(Users.class);
 
+                    assert userData != null;
                     if (userData.getPhone().equals(phone)) {
 
                         if (userData.getPassword().equals(password)) {
                             Toast.makeText(MainActivity.this, " logged in successfully ....", Toast.LENGTH_LONG).show();
                             loadingBar.dismiss();
                             Intent intent = new Intent(MainActivity.this, Home.class);
+                            Prevalent.currentOnlineUser = userData;
+
                             startActivity(intent);
                         }else
                         {
-
+                            loadingBar.dismiss();
                             Toast.makeText(MainActivity.this, " Pssss. wrong Password fella ....", Toast.LENGTH_LONG).show();
 
                         }

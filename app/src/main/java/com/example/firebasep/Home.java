@@ -23,9 +23,9 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-    DonateButton = (Button) findViewById(R.id.donatebtn);
-    OrderButton = (Button) findViewById(R.id.orderbtn);
-    LogoutButton = (Button) findViewById(R.id.logoutbtn);
+    DonateButton =  findViewById(R.id.donatebtn);
+    OrderButton =  findViewById(R.id.orderbtn);
+    LogoutButton =  findViewById(R.id.logoutbtn);
 
 DonateButton.setOnClickListener(new View.OnClickListener() {
     @Override
@@ -52,9 +52,10 @@ LogoutButton.setOnClickListener(new View.OnClickListener() {
         }
     });
 
-        TextView userNameTextView = (TextView) findViewById(R.id.profileName);
+        TextView userNameTextView =  findViewById(R.id.profileName);
 
-        userNameTextView.setText(Prevalent.CurrentonlineUsers.getName());
+        userNameTextView.setText(Prevalent.currentOnlineUser.getName());
+
     }
 
 

@@ -31,14 +31,15 @@ public class Order extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order);
 
-    ProductRef = FirebaseDatabase.getInstance().getReference().child("Products");
+        ProductRef = FirebaseDatabase.getInstance().getReference().child("Products");
 
 
-        recyclerView = findViewById(R.id.recyclerMenu);
+        recyclerView = findViewById(R.id.recycler_menu);
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
     }
+
 
     @Override
     protected void onStart() {
@@ -46,24 +47,25 @@ public class Order extends AppCompatActivity {
 
         FirebaseRecyclerOptions<Products> options =
                 new FirebaseRecyclerOptions.Builder<Products>()
-                .setQuery(ProductRef,Products.class).build();
+                        .setQuery(ProductRef, Products.class).build();
 
         FirebaseRecyclerAdapter<Products, ProductViewHolder> adapter =
                 new FirebaseRecyclerAdapter<Products, ProductViewHolder>(options) {
                     @Override
                     protected void onBindViewHolder(@NonNull ProductViewHolder holder, int position, @NonNull Products model) {
 
-            holder.txtProductDescription.setText(model.getDescription());
-            Picasso.get().load(model.getImage()).into(holder.imageView);
+                        holder.txtProductDescription.setText(model.getDescription());
+                        Picasso.get().load(model.getImage()).into(holder.imageView);
                     }
 
                     @NonNull
                     @Override
                     public ProductViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-                        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_product_item,parent,false);
-                        ProductViewHolder holder = new ProductViewHolder(view);
-                        return holder;
+                        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.product_items, parent, false);
+                        //ProductViewHolder holder = new ProductViewHolder(view);
+                        //return holder;
+                        return new ProductViewHolder(view);
                     }
                 };
 

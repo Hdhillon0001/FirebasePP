@@ -4,6 +4,10 @@ public class Products {
     private String description , image;
  public  Products(){}
 
+    public Products(String description, String image) {
+        this.description = description;
+        this.image = image;
+    }
 
     public String getDescription() {
         return description;
