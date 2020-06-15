@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@color/colorPrimaryDark"
     android:layout_height="match_parent"
     tools:context=".Home">
 
+    <EditText
+        android:id="@+id/profileName"
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="31dp"
+        android:gravity="center_horizontal"
+        android:text="User"
+        android:textSize="40dp" />
 
     <Button
         android:id="@+id/donatebtn"
@@ -24,7 +33,7 @@
         android:textSize="30sp"
          />
 
-   
+
     <Button
         android:id="@+id/orderbtn"
         android:layout_width="263dp"
@@ -41,4 +50,13 @@
         android:background="@color/colorAccent"
 
         android:gravity="center" />
+
+    <Button
+        android:id="@+id/logoutbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="53dp"
+        android:hint="Logout"
+         />
 </RelativeLayout>

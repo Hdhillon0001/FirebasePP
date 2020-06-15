@@ -1,14 +1,23 @@
 package com.example.firebasep;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import com.example.firebasep.Prevalent.Prevalent;
+
+import io.paperdb.Paper;
 
 public class Home extends AppCompatActivity {
-    private Button DonateButton,OrderButton;
+    private Button DonateButton,OrderButton,LogoutButton;
+
+
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +25,7 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
     DonateButton = (Button) findViewById(R.id.donatebtn);
     OrderButton = (Button) findViewById(R.id.orderbtn);
+    LogoutButton = (Button) findViewById(R.id.logoutbtn);
 
 DonateButton.setOnClickListener(new View.OnClickListener() {
     @Override
@@ -24,14 +34,16 @@ DonateButton.setOnClickListener(new View.OnClickListener() {
         startActivity(intent);
     }
 });
+LogoutButton.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        Paper.book().destroy();
+        Intent intent= new Intent(Home.this,MainActivity.class);
+        startActivity(intent);}
 
-        ///
-        ///
-        ///
-//need to add logout button here .nodnjsncj
-        ///
-        ////
-        /////
+});
+
+
     OrderButton.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
@@ -39,6 +51,10 @@ DonateButton.setOnClickListener(new View.OnClickListener() {
             startActivity(intent);
         }
     });
+
+        TextView userNameTextView = (TextView) findViewById(R.id.profileName);
+
+        userNameTextView.setText(Prevalent.CurrentonlineUsers.getName());
     }
 
 

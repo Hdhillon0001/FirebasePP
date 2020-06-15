@@ -90,11 +90,11 @@ AllowAccess(UserPhoneKey,UserPasswordKey);
                         }
                     }
 
-                } /*else {
-                    Toast.makeText(MainActivity.this, "", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(MainActivity.this, "Logged out", Toast.LENGTH_SHORT).show();
                     loadingBar.dismiss();
 
-                }*/
+                }
             }
 
             @Override
