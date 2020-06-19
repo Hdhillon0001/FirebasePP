@@ -49,7 +49,7 @@ public class Donate extends AppCompatActivity {
         setContentView(R.layout.activity_donate);
         loadingBar = new ProgressDialog(this);
         ProductImagesRef = FirebaseStorage.getInstance().getReference().child("Product Images");
-        ProductRef = FirebaseDatabase.getInstance().getReference().child("Products ");
+        ProductRef = FirebaseDatabase.getInstance().getReference().child("Products");
         InputProductImage = (ImageView) findViewById(R.id.itemimage);
         Postbutton = (Button) findViewById(R.id.postbtn);
         InputProductDescription = (EditText) findViewById(R.id.infotext);

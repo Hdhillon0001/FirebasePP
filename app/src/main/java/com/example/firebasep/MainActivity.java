@@ -7,6 +7,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
@@ -14,15 +15,21 @@ import android.widget.Toast;
 
 import com.example.firebasep.Model.Users;
 import com.example.firebasep.Prevalent.Prevalent;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.iid.InstanceIdResult;
 
 import io.paperdb.Paper;
 
 public class MainActivity extends AppCompatActivity {
+    private static final String TAG = "MainActivity";
+
     public Button loginBtn, register;
     private ProgressDialog loadingBar;
     @Override
@@ -46,6 +53,7 @@ loadingBar  = new ProgressDialog(this);
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, register.class);
                 startActivity(intent);
+
             }
         });
 
@@ -65,6 +73,7 @@ AllowAccess(UserPhoneKey,UserPasswordKey);
             }
         }
     }
+
     private void AllowAccess(final String phone, final String password){
 
         final DatabaseReference RootRef;

@@ -6,16 +6,34 @@ android:layout_height="match_parent"
 android:background="@color/colorPrimaryDark"
 tools:context=".Order">
 
-<FrameLayout
-    android:layout_width="360dp"
-    android:layout_height="658dp"
-    android:layout_marginLeft="30sp"
-    android:layout_marginTop="33sp"
-    android:layout_marginRight="30sp"
-    android:layout_marginBottom="33sp"
-    android:background="@color/colorAccent">
+    <Button
+        android:background="@color/colorAccent2"
+        android:id="@+id/btnShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:hint="show post" />
+
+    <FrameLayout
+        android:layout_width="366dp"
+        android:layout_height="646dp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="33sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginBottom="33sp"
+        android:background="@color/colorAccent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
 
 
+        </androidx.recyclerview.widget.RecyclerView>
 
-</FrameLayout>
+
+    </FrameLayout>
+
 </RelativeLayout>

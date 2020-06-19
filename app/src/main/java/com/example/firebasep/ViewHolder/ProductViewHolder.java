@@ -1,6 +1,7 @@
 package com.example.firebasep.ViewHolder;
 
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -11,9 +12,9 @@ import com.example.firebasep.Interfaces.itemClickListner;
 import com.example.firebasep.R;
 
 public class ProductViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-    public TextView txtProductDescription;
+    public EditText txtProductDescription;
     public ImageView imageView;
-    public itemClickListner listner;
+    private itemClickListner listner;
 
     public ProductViewHolder( @NonNull View itemView) {
         super(itemView);
@@ -23,12 +24,14 @@ public class ProductViewHolder extends RecyclerView.ViewHolder implements View.O
 
     }
 
-    public  void setItemClickListner(itemClickListner listner){
+    private  void setClickLinster (itemClickListner listner){
 
         this.listner = listner;
     }
     @Override
     public void onClick(View view) {
-listner.onClick(view, getAdapterPosition(),false);
+
+        listner.onClick(view, getAdapterPosition(),false);
+
     }
 }

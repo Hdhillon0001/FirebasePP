@@ -37,13 +37,7 @@
 
         android:textStyle="italic" />
 
-    <ImageView
-        android:layout_width="356dp"
-        android:layout_height="65dp"
-        android:layout_alignBottom="@id/nameofapp"
-        android:layout_marginBottom="-189dp"
 
-        android:src="@android:drawable/gallery_thumb" />
 
     <Button
         android:id="@+id/Loginbtn1"
