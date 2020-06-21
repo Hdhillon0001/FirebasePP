@@ -18,22 +18,22 @@
         android:paddingLeft="2dp"
         android:textStyle="bold|italic"
         android:paddingTop="29dp"
-        android:text="DATUM"
+        android:text="CareTaker"
         android:textSize="63dp"
 
         />
 
     <TextView
         android:id="@+id/quote"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="395dp"
+        android:layout_height="98dp"
         android:layout_alignBottom="@id/nameofapp"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="110dp"
-        android:layout_marginBottom="-63dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="-106dp"
         android:gravity="center_horizontal"
         android:paddingLeft="22dp"
-        android:text="faire  un don"
+        android:text="Somebody is there for your help.."
         android:textSize="33dp"
 
         android:textStyle="italic" />
