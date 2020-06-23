@@ -60,6 +60,7 @@
 
 
 
+
     <EditText
         android:id="@+id/phoneid"
         android:inputType="number"
@@ -144,7 +145,30 @@
         android:text="  Forget Password  "
 
         />
-<CheckBox
+
+    <TextView
+        android:id="@+id/adminLink"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@id/phoneid"
+        android:layout_alignBottom="@id/nameofapp"
+        android:layout_marginLeft="-155dp"
+        android:layout_marginBottom="-315dp"
+        android:hint=" Im Admin"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/not_adminLink"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@id/phoneid"
+        android:layout_alignBottom="@id/nameofapp"
+        android:layout_marginLeft="-60dp"
+        android:layout_marginBottom="-316dp"
+        android:hint=" Not Admin"
+        android:textSize="17dp" />
+
+    <CheckBox
     style="@style/Material.Drawable.CheckBox"
     android:id="@+id/remenbermechkbx"
     android:layout_width="wrap_content"

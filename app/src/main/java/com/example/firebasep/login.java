@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.firebasep.Model.Users;
@@ -26,6 +27,7 @@ import io.paperdb.Paper;
 public class login extends AppCompatActivity {
     private Button registertbutton, loginbutton;
     private EditText Phone, Passwordid;
+    private TextView AdminLink,NotAdminLink;
     private ProgressDialog loadingBar;
     private String parentName = "Users";
     private CheckBox RememberMe;
@@ -40,6 +42,9 @@ public class login extends AppCompatActivity {
         Phone = (EditText) findViewById(R.id.phoneid);
         Passwordid = (EditText) findViewById(R.id.passwordid);
         loadingBar = new ProgressDialog(this);
+        AdminLink = findViewById(R.id.adminLink);
+        NotAdminLink = findViewById(R.id.not_adminLink);
+
     RememberMe = (CheckBox)findViewById(R.id.remenbermechkbx);
         Paper.init(this);
         loginbutton.setOnClickListener(new View.OnClickListener() {
@@ -57,7 +62,26 @@ public class login extends AppCompatActivity {
             }
         });
 
+AdminLink.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        loginbutton.setText("Login Admin");
+        AdminLink.setVisibility(View.INVISIBLE);
+        NotAdminLink.setVisibility(View.VISIBLE);
+        parentName = "Admins";
 
+    }
+});
+
+NotAdminLink.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        loginbutton.setText("Login");
+        AdminLink.setVisibility(View.VISIBLE);
+        NotAdminLink.setVisibility(View.INVISIBLE);
+        parentName = "Users";
+    }
+});
     }
 
     private void LoginUser() {
@@ -98,11 +122,23 @@ public class login extends AppCompatActivity {
                     if (userData.getPhone().equals(phone)) {
 
                         if (userData.getPassword().equals(password)) {
-                            Toast.makeText(login.this, " logged in successfully ....", Toast.LENGTH_LONG).show();
+                            if(parentName.equals("Admins")){
+                            Toast.makeText(login.this, " logged in successfully as Admin....", Toast.LENGTH_LONG).show();
                             loadingBar.dismiss();
-                            Intent intent = new Intent(login.this, Home.class);
+                            Intent intent = new Intent(login.this, AdminAdd.class);
                             Prevalent.currentOnlineUser = userData;
                             startActivity(intent);
+                            }
+                            else if(parentName.equals("Users"))
+                            {
+
+                                Toast.makeText(login.this, " logged in successfully ....", Toast.LENGTH_LONG).show();
+                                loadingBar.dismiss();
+                                Intent intent = new Intent(login.this, Home.class);
+                                Prevalent.currentOnlineUser = userData;
+                                startActivity(intent);
+                            }
+
                         }else
                             {
 
